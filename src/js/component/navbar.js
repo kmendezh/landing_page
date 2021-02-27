@@ -1,7 +1,5 @@
 import React from "react";
 
-import { Jumpbotron } from "./jumpbotron.js";
-
 // CSS Styles
 // Flex Row style
 const flexStyle = {

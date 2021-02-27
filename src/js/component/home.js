@@ -4,6 +4,7 @@ import React from "react";
 import { Navbar } from "./navbar.js";
 import { Jumpbotron } from "./jumpbotron.js";
 import { Card } from "./card.js";
+import { Footer } from "./footer.js";
 
 // CSS Style
 
@@ -45,6 +46,7 @@ export function Home() {
 					</div>
 				</div>
 			</div>
+			<Footer />
 		</div>
 	);
 }
