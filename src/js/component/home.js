@@ -1,24 +1,50 @@
 import React from "react";
 
 //include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+import { Navbar } from "./navbar.js";
+import { Jumpbotron } from "./jumpbotron.js";
+import { Card } from "./card.js";
+
+// CSS Style
+
+// Content style
+const contenStyle = {
+	marginRight: "20%",
+	marginLeft: "20%",
+	display: "flex",
+	flexDirection: "column"
+};
+
+// column cards Style
+const columnCards = {
+	display: "flex",
+	flexDirection: "row"
+};
 
 //create your first component
 export function Home() {
 	return (
-		<div className="text-center mt-5">
-			<h1>Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+		<div>
+			<Navbar />
+			<div style={contenStyle}>
+				<div>
+					<Jumpbotron />
+				</div>
+				<div style={columnCards}>
+					<div>
+						<Card />
+					</div>
+					<div>
+						<Card />
+					</div>
+					<div>
+						<Card />
+					</div>
+					<div>
+						<Card />
+					</div>
+				</div>
+			</div>
 		</div>
 	);
 }
